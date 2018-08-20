@@ -105,10 +105,10 @@ class GifCreator
                 
             } elseif (is_string($frames[$i])) { // File path or URL or Binary source code
 			     
-                if (file_exists($frames[$i]) || filter_var($frames[$i], FILTER_VALIDATE_URL)) { // File path
+//                 if (file_exists($frames[$i]) || filter_var($frames[$i], FILTER_VALIDATE_URL)) { // File path
                     
-                    $frames[$i] = file_get_contents($frames[$i]);                    
-                }
+//                     $frames[$i] = file_get_contents($frames[$i]);                    
+//                 }
                 
                 $resourceImg = imagecreatefromstring($frames[$i]);
                 
